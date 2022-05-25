@@ -1,0 +1,95 @@
+#config_version=5
+
+config:
+- hardware.yaml
+
+displays:
+    windows:
+        width: 800
+        height: 600    
+    dmd:
+        width: 128
+        height: 32
+        default: true
+modes:
+    - base
+
+player_vars:
+  jet_count:
+    initial_value: 0
+
+ball_devices:
+    bd_trough:
+        ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
+        eject_coil: c_trough_eject
+        tags: trough, home, drain
+        jam_switch: s_trough_jam
+        eject_coil_jam_pulse: 15ms
+        eject_targets: bd_plunger
+        eject_timeouts: 3s        
+    bd_plunger:
+        ball_switches: s_plunger
+        mechanical_eject: true
+        eject_targets: playfield
+        eject_timeouts: 5s
+
+virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6
+
+slides:    
+    slide_start:
+        widgets:
+            - type: text
+              text: "CrazyFlip Pinball"
+              font_size: 50
+              color: red
+    attract_started:
+        widgets:
+            - type: image
+              image: Logo-crazyflip
+              
+slide_player:
+    init_done: slide_start
+    mode_attract_started: attract_started
+
+keyboard:
+    '<':
+        switch: s_flipper_left
+    ':':
+        switch: s_flipper_right
+    q:
+        switch: s_flipper_upper
+    't':
+        switch: s_jet_left        
+    'y':
+        switch: s_jet_right
+    'g':
+        switch: s_jet_down
+    'd':
+        switch: s_sling_left
+    's':
+        switch: s_start
+    i:
+        switch: s_right_inlane
+    'm':
+        switch: s_slingshot_right
+    p:
+        switch: s_plunger
+        toggle: true
+    1:
+        switch: s_trough1
+        toggle: true
+    2:
+        switch: s_trough2
+        toggle: true
+    3:
+        switch: s_trough3
+        toggle: true
+    4:
+        switch: s_trough4
+        toggle: true
+    5:
+        switch: s_trough5
+        toggle: true
+    6:
+        switch: s_trough6
+        toggle: true

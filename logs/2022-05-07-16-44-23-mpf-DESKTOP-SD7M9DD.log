@@ -1,0 +1,95 @@
+2022-05-07 16:44:23,643 : INFO : root : Loading config.
+2022-05-07 16:44:23,647 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2022-05-07 16:44:23,647 : WARNING : ConfigProcessor : Config file in cache changed: C:\repio\mpfenv\crazyFlip\config\config.yaml
+2022-05-07 16:44:23,647 : INFO : ConfigProcessor : Loading config from file c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf\mpfconfig.yaml.
+2022-05-07 16:44:23,731 : INFO : ConfigProcessor : Loading config: c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf\mpfconfig.yaml
+2022-05-07 16:44:23,732 : INFO : ConfigProcessor : Loading config from file C:\repio\mpfenv\crazyFlip\config\config.yaml.
+2022-05-07 16:44:23,749 : INFO : ConfigProcessor : Loading config: C:\repio\mpfenv\crazyFlip\config\config.yaml
+2022-05-07 16:44:23,772 : INFO : ConfigProcessor : Loading config: C:\repio\mpfenv\crazyFlip\config\hardware.yaml
+2022-05-07 16:44:23,775 : INFO : ConfigProcessor : Config file cache created: C:\Users\Repio\AppData\Local\Temp\25d46857b012d3821fe23cb4e6b6b034.mpf_cache
+2022-05-07 16:44:23,836 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\768b97d3cdff3ba84c45a3739d497feb.mpf_cache
+2022-05-07 16:44:23,838 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\24f4c4ff75cc6aca9851c28bb2d62b1a.mpf_cache
+2022-05-07 16:44:23,839 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\b1d7b75ee3dfcd96ec53ba2a7f4646eb.mpf_cache
+2022-05-07 16:44:23,839 : INFO : Machine : Mission Pinball Framework Core Engine v0.55.0
+2022-05-07 16:44:23,840 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2022-05-07-16-44-23-mpf-DESKTOP-SD7M9DD.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2022-05-07 16:44:23,840 : INFO : Machine : MPF path: c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf
+2022-05-07 16:44:23,840 : INFO : Machine : Machine path: C:\repio\mpfenv\crazyFlip
+2022-05-07 16:44:23,840 : INFO : Machine : Platform: win32
+2022-05-07 16:44:23,840 : INFO : Machine : Python executable location: c:\users\repio\downloads\python3.7.8\python.exe
+2022-05-07 16:44:23,840 : INFO : Machine : Python version: 3.7.8 (64-bit)
+2022-05-07 16:44:23,842 : INFO : Machine : Initialise MPF.
+2022-05-07 16:44:24,003 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,049 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,049 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 1700, 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_player2_score'====== Args={'value': 850, 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.55.0', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.55.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.7.8', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19041-SP0', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19041', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2022-05-07 16:44:24,050 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2022-05-07 16:44:24,068 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2022-05-07 16:44:24,069 : INFO : SwitchController : Found active switch: ('42', <Platform.SmartVirtual>) <switch.s_trough1>
+2022-05-07 16:44:24,069 : INFO : SwitchController : Found active switch: ('43', <Platform.SmartVirtual>) <switch.s_trough2>
+2022-05-07 16:44:24,069 : INFO : SwitchController : Found active switch: ('44', <Platform.SmartVirtual>) <switch.s_trough3>
+2022-05-07 16:44:24,069 : INFO : SwitchController : Found active switch: ('45', <Platform.SmartVirtual>) <switch.s_trough4>
+2022-05-07 16:44:24,069 : INFO : SwitchController : Found active switch: ('46', <Platform.SmartVirtual>) <switch.s_trough5>
+2022-05-07 16:44:24,069 : INFO : SwitchController : Found active switch: ('47', <Platform.SmartVirtual>) <switch.s_trough6>
+2022-05-07 16:44:24,074 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2022-05-07 16:44:24,075 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2022-05-07 16:44:26,111 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2022-05-07 16:44:26,111 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2022-05-07 16:44:26,117 : INFO : ball_device.bd_trough : BCH: Initial count: 6
+2022-05-07 16:44:26,118 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.55.0', 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,118 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.55.0 (config_version=5, BCP v1.1, Requires MPF v0.55.0-dev.49)', 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,119 : INFO : ball_device.bd_trough : State: idle
+2022-05-07 16:44:26,131 : INFO : ball_device.bd_plunger : BCH: Initial count: 0
+2022-05-07 16:44:26,131 : INFO : ball_device.bd_plunger : State: idle
+2022-05-07 16:44:26,168 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2022-05-07 16:44:26,170 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2022-05-07 16:44:26,171 : INFO : BallController : Initial balls found: 6
+2022-05-07 16:44:26,172 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,172 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,172 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 210.0, 'top': [1700, 1450, 850, 0, 0, 0, 0, 0, 0, 0], 'total': 15}, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,173 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_flipper_left'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,173 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_flipper_right'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,173 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_flipper_upper'====== Args={'value': 31, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,173 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_jet_down'====== Args={'value': 38, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,174 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_jet_left'====== Args={'value': 65, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,174 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_jet_right'====== Args={'value': 33, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,174 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 75, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,175 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 51, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,175 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_sling_left'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,175 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_slingshot_right'====== Args={'value': 18, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,175 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 45, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,176 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 48, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,176 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,176 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,177 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,177 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,177 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,177 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2022-05-07 16:44:26,178 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2022-05-07 16:44:26,189 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2022-05-07 16:44:26,189 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2022-05-07 16:44:26,201 : INFO : EventManager : Event: ======'slide_slide_start_removed'====== Args={'_from_bcp': True}
+2022-05-07 16:44:26,203 : INFO : EventManager : Event: ======'slide_slide_start_created'====== Args={'_from_bcp': True}
+2022-05-07 16:44:26,204 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2022-05-07 16:44:26,204 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2022-05-07 16:44:26,204 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2022-05-07 16:44:26,204 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2022-05-07 16:44:26,205 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2022-05-07 16:44:26,205 : INFO : Mode.attract : Started. Priority: 10
+2022-05-07 16:44:26,205 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2022-05-07 16:44:26,205 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2022-05-07 16:44:26,206 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2022-05-07 16:44:26,206 : INFO : EventManager : Event: ======'slide_slide_start_active'====== Args={'_from_bcp': True}
+2022-05-07 16:44:26,222 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2022-05-07 16:44:26,222 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2022-05-07 16:44:26,222 : INFO : Machine : Starting the main run loop.
+2022-05-07 16:44:34,904 : INFO : Machine : Shutting down...
+2022-05-07 16:44:34,904 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2022-05-07 16:44:34,907 : INFO : root : MPF run loop ended.

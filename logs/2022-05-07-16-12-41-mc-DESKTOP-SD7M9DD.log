@@ -1,0 +1,57 @@
+2022-05-07 16:12:41,102 : kivy : Factory: 186 symbols loaded
+2022-05-07 16:12:41,242 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.2
+2022-05-07 16:12:41,243 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2022-05-07 16:12:41,277 : kivy : VideoGstplayer: Using Gstreamer 1.18.0.0
+2022-05-07 16:12:41,277 : kivy : Video: Provider: gstplayer
+2022-05-07 16:12:41,477 : kivy : Loading MPF-MC controller
+2022-05-07 16:12:41,481 : YamlMultifileConfigLoader : Machine config file #1: config
+2022-05-07 16:12:41,481 : ConfigProcessor : Config file in cache changed: C:\repio\mpfenv\crazyFlip\config\config
+2022-05-07 16:12:41,483 : ConfigProcessor : Loading config from file c:\users\repio\downloads\python3.7.8\lib\site-packages\mpfmc\mcconfig.yaml.
+2022-05-07 16:12:41,527 : ConfigProcessor : Loading config: c:\users\repio\downloads\python3.7.8\lib\site-packages\mpfmc\mcconfig.yaml
+2022-05-07 16:12:41,527 : ConfigProcessor : Loading config from file C:\repio\mpfenv\crazyFlip\config\config.
+2022-05-07 16:12:41,546 : ConfigProcessor : Loading config: C:\repio\mpfenv\crazyFlip\config\config
+2022-05-07 16:12:41,568 : ConfigProcessor : Loading config: C:\repio\mpfenv\crazyFlip\config\hardware.yaml
+2022-05-07 16:12:41,571 : ConfigProcessor : Config file cache created: C:\Users\Repio\AppData\Local\Temp\06f87a375a38eca5729c2ca63bf6404d.mpf_cache
+2022-05-07 16:12:41,571 : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\768b97d3cdff3ba84c45a3739d497feb.mpf_cache
+2022-05-07 16:12:41,572 : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\24f4c4ff75cc6aca9851c28bb2d62b1a.mpf_cache
+2022-05-07 16:12:41,573 : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\b1d7b75ee3dfcd96ec53ba2a7f4646eb.mpf_cache
+2022-05-07 16:12:41,573 : mpfmc : Mission Pinball Framework Media Controller v0.55.0
+2022-05-07 16:12:41,573 : mpfmc : Mission Pinball Framework Game Engine v0.55.0
+2022-05-07 16:12:41,574 : mpfmc : Machine path: C:\repio\mpfenv\crazyFlip
+2022-05-07 16:12:41,574 : mpfmc : Starting clock at 60.0Hz
+2022-05-07 16:12:41,586 : kivy : Text: Provider: sdl2
+2022-05-07 16:12:41,621 : kivy : Window: Provider: sdl2
+2022-05-07 16:12:41,921 : kivy : GL: Using the "OpenGL" graphics system
+2022-05-07 16:12:41,926 : kivy : GL: GLEW initialization succeeded
+2022-05-07 16:12:41,926 : kivy : GL: Backend used <glew>
+2022-05-07 16:12:41,926 : kivy : GL: OpenGL version <b'4.6.0 NVIDIA 456.71'>
+2022-05-07 16:12:41,926 : kivy : GL: OpenGL vendor <b'NVIDIA Corporation'>
+2022-05-07 16:12:41,926 : kivy : GL: OpenGL renderer <b'GeForce GTX 1060 6GB/PCIe/SSE2'>
+2022-05-07 16:12:41,926 : kivy : GL: OpenGL parsed version: 4, 6
+2022-05-07 16:12:41,926 : kivy : GL: Shading version <b'4.60 NVIDIA'>
+2022-05-07 16:12:41,927 : kivy : GL: Texture max size <32768>
+2022-05-07 16:12:41,927 : kivy : GL: Texture max units <32>
+2022-05-07 16:12:41,953 : kivy : Window: auto add sdl2 input provider
+2022-05-07 16:12:41,954 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2022-05-07 16:12:41,955 : ConfigValidator : Your config contains a value for the setting "displays:title", but this is not a valid setting name.
+2022-05-07 16:12:41,955 : kivy : Config File Error in ConfigValidator: Your config contains a value for the setting "displays:title", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://docs.missionpinball.org/en/0.55/logs/CFE-ConfigValidator-2.html)
+Traceback (most recent call last):
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpfmc\commands\mc.py", line 227, in __init__
+    thread_stopper=thread_stopper).run()
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpfmc\core\mc.py", line 154, in __init__
+    self.config_processor = ConfigProcessor(self)
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpfmc\core\config_processor.py", line 34, in __init__
+    self.process_displays(config=self.mc.machine_config['displays'])
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpfmc\core\config_processor.py", line 82, in process_displays
+    self.mc.displays[display] = self.create_display(display, settings)
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpfmc\core\config_processor.py", line 88, in create_display
+    return Display(self.mc, name, **self.machine.config_validator.validate_config('displays', config))
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf\core\config_validator.py", line 180, in validate_config
+    validation_failure_info=validation_failure_info)
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf\core\config_validator.py", line 192, in _validate_config
+    self.check_for_invalid_sections(this_spec, source, validation_failure_info)
+  File "c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf\core\config_validator.py", line 359, in check_for_invalid_sections
+    'setting name.', 2, self.log.name)
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Your config contains a value for the setting "displays:title", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://docs.missionpinball.org/en/0.55/logs/CFE-ConfigValidator-2.html)
+2022-05-07 16:12:41,957 : kivy : Stopping child threads... (0 remaining)
+2022-05-07 16:12:41,957 : kivy : All child threads stopped.

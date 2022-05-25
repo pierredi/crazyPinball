@@ -1,0 +1,126 @@
+#config_version=5
+playfields:
+    playfield:
+        tags: default
+        default_source_device: bd_plunger
+    
+switches:
+    s_flipper_left:
+        number: 10
+        tags: left_flipper
+    s_flipper_right:
+        number: 11
+        tags: right_flipper
+    s_flipper_upper:
+        number: 12
+        tags: upper_flipper
+    s_sling_left:
+        number: 13
+        tags: left_slingshot
+    s_slingshot_right:
+        number: 14
+        tags: right_slingshot
+    s_jet_left:
+        number: 15
+        tags: left_bumper
+    s_jet_right:
+        number: 16
+        tags: right_bumper
+    s_jet_down:
+        number: 17
+        tags: down_bumper
+    s_trough1:
+        number: 42
+        type: NC
+    s_trough2:
+        number: 43
+        type: NC
+    s_trough3:
+        number: 44
+        type: NC
+    s_trough4:
+        number: 45
+        type: NC
+    s_trough5:
+        number: 46
+        type: NC
+    s_trough6:
+        number: 47
+        type: NC
+    s_trough_jam:
+        number: 48
+        type: NC
+    s_plunger:
+        number: 49
+    s_start:
+        number: 50
+        tags: start
+    s_right_inlane:
+        number: 51
+        tags: playfield_active
+coils:
+    c_flipper_left_main:
+        number: 1
+        default_pulse_ms: 20
+    c_flipper_left_hold:
+        number: 2    
+        allow_enable: true
+    c_flipper_right_main:
+        number: 3
+        default_pulse_ms: 20
+    c_flipper_right_hold:
+        number: 4
+        allow_enable: true
+    c_flipper_upper_main:
+        number: 5
+        default_pulse_ms: 20
+    c_flipper_upper_hold:
+        number: 6    
+        allow_enable: true        
+    c_sling_left:
+        number: 7
+    c_slingshot_right:
+        number: 8
+    c_jet_left:
+        number: 31
+    c_jet_right:
+        number: 32
+    c_jet_down:
+        number: 33
+    c_trough_eject:
+        number: 41
+        default_pulse_ms: 20
+
+autofire_coils:
+    slingshot_left:
+        coil: c_sling_left
+        switch: s_sling_left
+    slingshot_right:
+        coil: c_slingshot_right
+        switch: s_slingshot_right  
+    jet_left:
+        coil: c_jet_left
+        switch: s_jet_left
+    jet_right:
+        coil: c_jet_right
+        switch: s_jet_right
+    jet_down:
+        coil: c_jet_down
+        switch: s_jet_down
+
+flippers:
+    f_flipper_left:
+        main_coil: c_flipper_left_main
+        hold_coil: c_flipper_left_hold
+        activation_switch: s_flipper_left
+        #enable_events: machine_reset_phase_3
+    f_flipper_right:
+        main_coil: c_flipper_right_main
+        hold_coil: c_flipper_right_hold
+        activation_switch: s_flipper_right
+        #enable_events: machine_reset_phase_3
+    f_flipper_upper:
+        main_coil: c_flipper_upper_main
+        hold_coil: c_flipper_upper_hold
+        activation_switch: s_flipper_upper
+        #enable_events: machine_reset_phase_3        

@@ -1,0 +1,37 @@
+events:
+  game_ended: 0
+  game_started: 1
+player:
+  score:
+    average: 210.0
+    top:
+    - 1700
+    - 1450
+    - 850
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    total: 15
+switches:
+  s_flipper_left: 12
+  s_flipper_right: 13
+  s_flipper_upper: 31
+  s_jet_down: 38
+  s_jet_left: 65
+  s_jet_right: 33
+  s_plunger: 75
+  s_right_inlane: 51
+  s_sling_left: 11
+  s_slingshot_right: 18
+  s_start: 45
+  s_trough1: 48
+  s_trough2: 2
+  s_trough3: 0
+  s_trough4: 0
+  s_trough5: 0
+  s_trough6: 0
+  s_trough_jam: 0

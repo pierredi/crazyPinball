@@ -1,0 +1,46 @@
+2022-05-07 16:12:40,773 : INFO : root : Loading config.
+2022-05-07 16:12:40,777 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2022-05-07 16:12:40,778 : WARNING : ConfigProcessor : Config file in cache changed: C:\repio\mpfenv\crazyFlip\config\config.yaml
+2022-05-07 16:12:40,778 : INFO : ConfigProcessor : Loading config from file c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf\mpfconfig.yaml.
+2022-05-07 16:12:40,864 : INFO : ConfigProcessor : Loading config: c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf\mpfconfig.yaml
+2022-05-07 16:12:40,865 : INFO : ConfigProcessor : Loading config from file C:\repio\mpfenv\crazyFlip\config\config.yaml.
+2022-05-07 16:12:40,883 : INFO : ConfigProcessor : Loading config: C:\repio\mpfenv\crazyFlip\config\config.yaml
+2022-05-07 16:12:40,906 : INFO : ConfigProcessor : Loading config: C:\repio\mpfenv\crazyFlip\config\hardware.yaml
+2022-05-07 16:12:40,909 : INFO : ConfigProcessor : Config file cache created: C:\Users\Repio\AppData\Local\Temp\25d46857b012d3821fe23cb4e6b6b034.mpf_cache
+2022-05-07 16:12:40,971 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\768b97d3cdff3ba84c45a3739d497feb.mpf_cache
+2022-05-07 16:12:40,972 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\24f4c4ff75cc6aca9851c28bb2d62b1a.mpf_cache
+2022-05-07 16:12:40,972 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Repio\AppData\Local\Temp\b1d7b75ee3dfcd96ec53ba2a7f4646eb.mpf_cache
+2022-05-07 16:12:40,973 : INFO : Machine : Mission Pinball Framework Core Engine v0.55.0
+2022-05-07 16:12:40,973 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2022-05-07-16-12-40-mpf-DESKTOP-SD7M9DD.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2022-05-07 16:12:40,973 : INFO : Machine : MPF path: c:\users\repio\downloads\python3.7.8\lib\site-packages\mpf
+2022-05-07 16:12:40,973 : INFO : Machine : Machine path: C:\repio\mpfenv\crazyFlip
+2022-05-07 16:12:40,974 : INFO : Machine : Platform: win32
+2022-05-07 16:12:40,974 : INFO : Machine : Python executable location: c:\users\repio\downloads\python3.7.8\python.exe
+2022-05-07 16:12:40,974 : INFO : Machine : Python version: 3.7.8 (64-bit)
+2022-05-07 16:12:40,976 : INFO : Machine : Initialise MPF.
+2022-05-07 16:12:41,141 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,189 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,189 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 1700, 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,189 : INFO : EventManager : Event: ======'machine_var_player2_score'====== Args={'value': 850, 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,189 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.55.0', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,189 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.55.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,189 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.7.8', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,190 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19041-SP0', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,190 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,190 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,190 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19041', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,190 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2022-05-07 16:12:41,190 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2022-05-07 16:12:41,207 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2022-05-07 16:12:41,207 : INFO : SwitchController : Found active switch: ('42', <Platform.SmartVirtual>) <switch.s_trough1>
+2022-05-07 16:12:41,207 : INFO : SwitchController : Found active switch: ('43', <Platform.SmartVirtual>) <switch.s_trough2>
+2022-05-07 16:12:41,207 : INFO : SwitchController : Found active switch: ('44', <Platform.SmartVirtual>) <switch.s_trough3>
+2022-05-07 16:12:41,207 : INFO : SwitchController : Found active switch: ('45', <Platform.SmartVirtual>) <switch.s_trough4>
+2022-05-07 16:12:41,207 : INFO : SwitchController : Found active switch: ('46', <Platform.SmartVirtual>) <switch.s_trough5>
+2022-05-07 16:12:41,208 : INFO : SwitchController : Found active switch: ('47', <Platform.SmartVirtual>) <switch.s_trough6>
+2022-05-07 16:12:41,212 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2022-05-07 16:12:41,213 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2022-05-07 16:12:51,055 : INFO : Machine : Starting the main run loop.
+2022-05-07 16:12:51,055 : INFO : Machine : Shutting down...
+2022-05-07 16:12:51,056 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2022-05-07 16:12:51,057 : INFO : root : MPF run loop ended.
