@@ -2,21 +2,23 @@
 
 config:
 - hardware.yaml
+- shots.yaml
 
 displays:
     windows:
         width: 800
-        height: 600    
-    dmd:
-        width: 128
-        height: 32
-        default: true
+        height: 600   
+    
 modes:
     - base
+    - attract
+    - lanechange
 
 player_vars:
-  jet_count:
-    initial_value: 0
+    jet_count:
+        initial_value: 0
+    bonus_multiplier:
+        initial_value: 1
 
 ball_devices:
     bd_trough:
@@ -35,22 +37,6 @@ ball_devices:
 
 virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6
 
-slides:    
-    slide_start:
-        widgets:
-            - type: text
-              text: "CrazyFlip Pinball"
-              font_size: 50
-              color: red
-    attract_started:
-        widgets:
-            - type: image
-              image: Logo-crazyflip
-              
-slide_player:
-    init_done: slide_start
-    mode_attract_started: attract_started
-
 keyboard:
     '<':
         switch: s_flipper_left
@@ -64,10 +50,18 @@ keyboard:
         switch: s_jet_right
     'g':
         switch: s_jet_down
-    'd':
+    'e':
         switch: s_sling_left
     's':
         switch: s_start
+    'd':
+        switch: s_right_outlane
+    'c':
+        switch: s_right_inlane
+    'b':
+        switch: s_left_inlane
+    'a':
+        switch: s_left_outlane
     i:
         switch: s_right_inlane
     'm':

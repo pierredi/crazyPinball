@@ -16,7 +16,7 @@ variable_player:
     jet_count: 1
   s_jet_down_active:
     score: 50
-    jet_count: 1
+    jet_count: 1  
     
 slide_player:
   mode_base_started:
@@ -41,6 +41,6 @@ slide_player:
         anchor_y: bottom
         font_size: 50
       - type: text
-        text: 'Bumpers Count: (jet_count)'
+        text: 'Bumpers Count: (jet_count) Multiplicateur: (bonus_multiplier)'
         y: 40%
      

@@ -58,6 +58,36 @@ switches:
     s_right_inlane:
         number: 51
         tags: playfield_active
+    s_left_inlane:
+        number: 52
+        tags: playfield_active
+    s_right_outlane:
+        number: 53
+        tags: playfield_active
+    s_left_outlane:
+        number: 54
+        tags: playfield_active
+lights:
+    l_right_inlane:
+        number: 1
+    l_right_outlane:
+        number: 2
+    l_left_inlane:
+        number: 3
+    l_left_outlane:
+        number: 4
+    l_right_loop:
+        number: 5
+    l_right_ramp:
+        number: 6
+    l_left_ramp:
+        number: 7
+    l_left_loop:
+        number: 8
+    l_upper_loop:
+        number: 9
+    l_main_scope:
+        number: 10
 coils:
     c_flipper_left_main:
         number: 1
