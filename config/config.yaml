@@ -13,12 +13,18 @@ modes:
     - base
     - attract
     - lanechange
+    - super_jets_setup
+    - super_jets
+    - bonus
 
 player_vars:
     jet_count:
         initial_value: 0
     bonus_multiplier:
         initial_value: 1
+    sj_active:
+        value_type: int
+        initial_value: 0
 
 ball_devices:
     bd_trough:
@@ -66,6 +72,10 @@ keyboard:
         switch: s_right_inlane
     'm':
         switch: s_slingshot_right
+    'f':
+        switch: s_left_loop
+    'h':
+        switch: s_right_loop
     p:
         switch: s_plunger
         toggle: true

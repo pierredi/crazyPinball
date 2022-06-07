@@ -3,42 +3,51 @@ events:
   game_started: 1
 player:
   score:
-    average: 2175.0
+    average: 23928.4375
     top:
-    - 31650
-    - 2700
-    - 2400
-    - 2000
-    - 1700
-    - 1600
-    - 1450
-    - 850
-    - 0
-    - 0
-    total: 20
+    - 96710
+    - 85740
+    - 79930
+    - 76320
+    - 66130
+    - 64470
+    - 61950
+    - 53890
+    - 34580
+    - 34500
+    total: 32
 shots:
-  sh_left_inlane: 19
-  sh_left_outlane: 9
-  sh_right_inlane: 11
-  sh_right_outlane: 7
+  jets: 2565
+  sh_left_inlane: 50
+  sh_left_loop: 51
+  sh_left_outlane: 40
+  sh_right_inlane: 42
+  sh_right_loop: 36
+  sh_right_outlane: 38
   shot_left_inlane: 4
   shot_left_outlane: 1
 switches:
-  s_flipper_left: 39
+  s_flipper_left: 40
   s_flipper_right: 35
-  s_flipper_upper: 33
-  s_jet_down: 41
-  s_jet_left: 324
-  s_jet_right: 124
-  s_left_inlane: 25
-  s_left_outlane: 10
-  s_plunger: 115
-  s_right_inlane: 63
-  s_right_outlane: 7
+  s_flipper_upper: 34
+  s_jet_down: 408
+  s_jet_left: 1708
+  s_jet_right: 1315
+  s_left_inlane: 56
+  s_left_loop: 54
+  s_left_outlane: 41
+  s_left_ramp_end: 0
+  s_left_ramp_start: 0
+  s_plunger: 185
+  s_right_inlane: 94
+  s_right_loop: 45
+  s_right_outlane: 38
+  s_right_ramp_end: 0
+  s_right_ramp_start: 0
   s_sling_left: 11
   s_slingshot_right: 18
-  s_start: 47
-  s_trough1: 82
+  s_start: 48
+  s_trough1: 129
   s_trough2: 2
   s_trough3: 0
   s_trough4: 0

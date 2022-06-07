@@ -16,8 +16,55 @@ variable_player:
     jet_count: 1
   s_jet_down_active:
     score: 50
-    jet_count: 1  
-    
+    jet_count: 1
+  
+sequence_shots:
+  left_loop:
+    switch_sequence: s_left_loop, s_right_loop
+    sequence_timeout: 2s
+  left_ramp:
+    switch_sequence: s_left_ramp_start, s_left_ramp_end
+    sequence_timeout: 2s
+  right_ramp:
+    switch_sequence: s_right_ramp_start, s_right_ramp_end
+    sequence_timeout: 2s    
+  right_loop:
+    switch_sequence: s_right_loop, s_left_loop
+    sequence_timeout: 2s    
+
+shots:
+  sh_left_loop:
+    hit_events: left_loop_hit
+    profile: three_way_profile
+    show_tokens:      
+      led: l_left_loop      
+  sh_right_loop:
+    hit_events: right_loop_hit
+    profile: three_way_profile
+    show_tokens:
+      led: l_right_loop
+  sh_left_ramp:
+    hit_events: left_ramp_hit
+    profile: three_way_profile
+    show_tokens:
+      led: l_left_ramp
+  sh_right_ramp:
+    hit_events: right_ramp_hit
+    profile: three_way_profile
+    show_tokens:
+      led: l_right_ramp
+
+shot_profiles:  
+  three_way_profile:
+    states:
+      - name: unlit  # step 1
+        show: off
+      - name: flashing  # step 2
+        show: flash
+      - name: lit  # step 3
+        show: left_loop_show        
+    loop: true
+
 slide_player:
   mode_base_started:
     widgets:

@@ -1,0 +1,26 @@
+#config_version=5
+##! mode: super_jets
+mode:
+  start_events: Super_Jets_Go, Super_Jets_Resume_Go
+  priority: 300
+  stop_events: ball_will_end
+
+variable_player:
+  s_left_bumper_active:
+    score: 300|block
+  s_middle_bumper_active:
+    score: 300|block
+  s_right_bumper_active:
+    score: 300|block
+
+show_player:
+  mode_super_jets_started:
+    super_jets_startup:
+      loops: 0
+    super_jets_on:
+      show_tokens:
+        lights: l_super_jets
+  # mode_super_jets_stopped:
+  #   super_jets_off:
+  #     show_tokens:
+  #       lights: l_super_jets

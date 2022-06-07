@@ -1,0 +1,25 @@
+#show_version=5
+
+- duration: 3s
+  slides:
+    mission_pinball:
+      widgets:
+      - type: Text
+        text: SUPER JETS
+        color: red
+      transition:
+        type: move_in
+        duration: 1s
+        direction: top
+- duration: 2s
+  slides:
+    super_jets_startup:
+      widgets:
+      - type: text
+        text: SUPER JETS
+        font_size: 20
+        y: 60%
+##!        priority: 200
+
+##! mode: super_jets_startup
+  

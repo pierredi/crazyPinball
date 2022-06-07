@@ -67,6 +67,24 @@ switches:
     s_left_outlane:
         number: 54
         tags: playfield_active
+    s_right_loop:
+        number: 55
+        tags: playfield_active
+    s_left_loop:
+        number: 56
+        tags: playfield_active
+    s_right_ramp_start:
+        number: 57
+        tags: playfield_active
+    s_left_ramp_start:
+        number: 58
+        tags: playfield_active
+    s_right_ramp_end:
+        number: 59
+        tags: playfield_active
+    s_left_ramp_end:
+        number: 60
+        tags: playfield_active
 lights:
     l_right_inlane:
         number: 1
@@ -88,6 +106,8 @@ lights:
         number: 9
     l_main_scope:
         number: 10
+    l_super_jets:
+        number: 11
 coils:
     c_flipper_left_main:
         number: 1
