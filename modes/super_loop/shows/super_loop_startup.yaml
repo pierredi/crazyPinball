@@ -1,0 +1,23 @@
+#show_version=5
+- duration: 3s
+  slides:
+    sup_loop:
+      widgets:
+      - type: Text
+        text: SUPER LOOP
+        color: red
+      transition:
+        type: move_in
+        duration: 1s
+        direction: top
+- duration: 17s
+  slides:    
+    show_timer:
+      widgets:
+      - type: Text
+        text: (player|loop_timer_variable_times_1)
+
+##!        priority: 220
+
+##! mode: super_loop_startup
+  

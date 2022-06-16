@@ -17,6 +17,15 @@ variable_player:
   s_jet_down_active:
     score: 50
     jet_count: 1
+  left_loop_hit:
+    score: 100
+    loop_count: 1
+  right_loop_hit:
+    score: 100
+    loop_count: 1
+  upper_loop_hit:
+    score: 150
+    loop_count: 1
   
 sequence_shots:
   left_loop:
@@ -30,19 +39,27 @@ sequence_shots:
     sequence_timeout: 2s    
   right_loop:
     switch_sequence: s_right_loop, s_left_loop
-    sequence_timeout: 2s    
+    sequence_timeout: 2s  
+  upper_loop:
+    switch_sequence: s_upper_loop, s_left_loop
+    sequence_timeout: 2s
 
 shots:
-  sh_left_loop:
-    hit_events: left_loop_hit
-    profile: three_way_profile
-    show_tokens:      
-      led: l_left_loop      
-  sh_right_loop:
-    hit_events: right_loop_hit
-    profile: three_way_profile
-    show_tokens:
-      led: l_right_loop
+  # sh_left_loop:
+  #   hit_events: left_loop_hit
+  #   #profile: three_way_profile
+  #   show_tokens:      
+  #     led: l_left_loop      
+  # sh_right_loop:
+  #   hit_events: right_loop_hit
+  #   #profile: three_way_profile
+  #   show_tokens:
+  #     led: l_right_loop
+  # sh_upper_loop:
+  #   hit_events: upper_loop_hit
+  #   #profile: three_way_profile
+  #   show_tokens:
+  #     led: l_upper_loop
   sh_left_ramp:
     hit_events: left_ramp_hit
     profile: three_way_profile
@@ -62,7 +79,8 @@ shot_profiles:
       - name: flashing  # step 2
         show: flash
       - name: lit  # step 3
-        show: left_loop_show        
+        show_tokens: 
+          color: red        
     loop: true
 
 slide_player:
@@ -88,6 +106,6 @@ slide_player:
         anchor_y: bottom
         font_size: 50
       - type: text
-        text: 'Bumpers Count: (jet_count) Multiplicateur: (bonus_multiplier)'
+        text: 'Bumpers Count: (jet_count) Multiplicateur: (bonus_multiplier), loop:(loop_count)'
         y: 40%
      

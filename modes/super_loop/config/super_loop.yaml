@@ -1,0 +1,40 @@
+#config_version=5
+##! mode: super_loop
+mode:
+  start_events: Super_Loop_Go, Super_Loop_Resume_Go
+  priority: 300
+  stop_events: ball_will_end, end_show_done
+
+timers:
+  loop_timer:
+    start_value: 20
+    end_value: 0
+    direction: down    
+    control_events:
+      - action: start
+        event: mode_super_loop_started
+      - action: stop
+        event: mode_super_loop_stopped
+
+variable_player:
+  right_loop_hit:
+    score: 400|block
+  left_loop_hit:
+    score: 400|block
+  upper_loop_hit:
+    score: 1000|block
+  timer_loop_timer_tick:
+    loop_timer_variable_times_1:
+      int: device.timers.loop_timer.ticks * 1
+      action: set
+
+show_player:
+  mode_super_loop_started:
+    super_loop_startup:
+      loops: 0
+    super_loop_on:
+      speed: 1
+  timer_loop_timer_complete:
+    super_loop_result:
+      loops: 0
+      events_when_completed: end_show_done
