@@ -1,0 +1,16 @@
+#show_version=5
+- duration: 1
+  lights:
+    l_left_loop: red
+    l_upper_loop: yellow
+    l_right_loop: orange
+- duration: 1
+  lights:
+    l_left_loop: orange
+    l_upper_loop: red
+    l_right_loop: yellow
+- duration: 1
+  lights:
+    l_left_loop: yellow
+    l_upper_loop: orange
+    l_right_loop: red

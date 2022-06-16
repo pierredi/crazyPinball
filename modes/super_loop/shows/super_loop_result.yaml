@@ -1,0 +1,18 @@
+#show_version=5
+- duration: 3s
+  slides:
+    sup_loop_end:
+      widgets:
+      - type: Text
+        text: SUPER LOOP Finish
+        color: red
+      transition:
+        type: move_in
+        duration: 1s
+        direction: top
+- duration: 3s
+  slides:    
+    show_loop_score:
+      widgets:
+      - type: Text
+        text: (score) loop:(loop_count)

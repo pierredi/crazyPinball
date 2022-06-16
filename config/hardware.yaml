@@ -85,6 +85,9 @@ switches:
     s_left_ramp_end:
         number: 60
         tags: playfield_active
+    s_upper_loop:
+        number: 61
+        tags: playfield_active
 lights:
     l_right_inlane:
         number: 1
