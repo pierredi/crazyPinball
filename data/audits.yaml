@@ -1,5 +1,5 @@
 events:
-  game_ended: 1
+  game_ended: 0
   game_started: 1
 player:
   score:
@@ -30,7 +30,7 @@ shots:
 switches:
   s_flipper_left: 40
   s_flipper_right: 35
-  s_flipper_upper: 34
+  s_flipper_upper: 37
   s_jet_down: 518
   s_jet_left: 1901
   s_jet_right: 1507
@@ -39,7 +39,7 @@ switches:
   s_left_outlane: 44
   s_left_ramp_end: 0
   s_left_ramp_start: 0
-  s_plunger: 226
+  s_plunger: 227
   s_right_inlane: 97
   s_right_loop: 597
   s_right_outlane: 42
@@ -47,7 +47,7 @@ switches:
   s_right_ramp_start: 0
   s_sling_left: 11
   s_slingshot_right: 18
-  s_start: 48
+  s_start: 49
   s_trough1: 141
   s_trough2: 2
   s_trough3: 0

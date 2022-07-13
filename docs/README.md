@@ -1,13 +1,34 @@
 # Documentation
-Pinball CrazyFlip early proto
+**Pinball CrazyFlip early proto**
 
-**Règles**
+Warning : le franglais est autorisé
+
+### Thème
+---
+A débattre
+
+### Objectif principaux
+---
+A détailler
+
+### Règles générales
+---
 ![Règles](./Mission%20Principale.png)
 
-**Multibilles**
+Terminer les multibilles, les missions, les supers et l'histoire permet d'activer le Wizard Mode de la mission principale.
 
-**Missions**
+### Multibilles
+---
+Voir [section dédiée](./multibilles/README.md).
 
-**Histoire**
+### Missions
+---
+Voir [section dédiée](./missions/README.md).
 
-**Super**
+### Supers
+---
+Voir [section dédiée](./supers/README.md).
+
+### Histoire
+---
+Voir [section dédiée](./histoire/README.md).
