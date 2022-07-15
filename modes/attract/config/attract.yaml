@@ -6,4 +6,4 @@ show_player:
     attract_light_show:
       speed: 2
     attract_rainbow_show:
-      speed: 3
+      speed: 3    

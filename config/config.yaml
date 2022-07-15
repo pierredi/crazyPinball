@@ -16,7 +16,10 @@ modes:
     - super_jets_setup
     - super_jets
     - super_loop_setup
-    - super_loop    
+    - super_loop
+    - kraken
+    - kraken2
+    - krakenFinal
     - bonus
 
 player_vars:
@@ -32,6 +35,8 @@ player_vars:
     sl_active:
         value_type: int
         initial_value: 0
+    your_life:
+        initial_value: 5
 
 ball_devices:
     bd_trough:

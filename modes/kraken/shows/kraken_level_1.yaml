@@ -1,0 +1,18 @@
+#show_version=5
+- duration: 3s
+  slides:
+    kraken_stage_1:
+      widgets:
+      - type: Text
+        text: KRAKEN LEVEL 1
+        color: purple
+      transition:
+        type: move_in
+        duration: 1s
+        direction: top
+- duration: 2s
+  slides:    
+    show_timer:
+      widgets:
+      - type: Text
+        text: GOGOGO

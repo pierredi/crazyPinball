@@ -1,0 +1,91 @@
+#config_version=5
+##! mode: Kraken
+mode:
+  start_events: krakenFinal_go
+  priority: 300
+  stop_events: ball_will_end, end_krakenFinal_done
+
+timers:
+  kraken_rotator:
+    start_running: true
+    tick_interval: 2s
+    
+shots:
+  sh_krakenFinal_1:
+    hit_events: left_loop_hit
+    profile: kraken_final_pro
+    advance_events: mode_krakenFinal_started, advance_shot_1
+    show_tokens:      
+      leds: l_left_loop 
+  sh_krakenFinal_2:
+    hit_events: left_ramp_hit
+    profile: kraken_final_pro
+    advance_events: advance_shot_2
+    show_tokens:
+      leds: l_left_ramp
+  sh_krakenFinal_3:
+    hit_events: upper_loop_hit
+    profile: kraken_final_pro
+    advance_events: advance_shot_3
+    show_tokens:
+      leds: l_upper_loop  
+  sh_krakenFinal_4:
+    hit_events: right_ramp_hit
+    profile: kraken_final_pro
+    advance_events: advance_shot_5
+    show_tokens:
+      leds: l_right_ramp
+  sh_krakenFinal_5:
+    hit_events: right_loop_hit
+    profile: kraken_final_pro
+    advance_events: advance_shot_6
+    show_tokens:
+      leds: l_right_loop
+
+shot_profiles:  
+  kraken_final_pro:
+    advance_on_hit: false
+    rotation_pattern: l, l, r, r
+    states:      
+      - name: lit
+        show: "purple_lit"
+      - name: red
+        show: "red_lit"    
+
+shot_groups:
+  krakenFinal_tentacules_group:
+    shots: sh_krakenFinal_1, sh_krakenFinal_3, sh_krakenFinal_5
+    #  ,sh_kraken_4, sh_kraken_2
+    reset_events: krakenFinal_tentacules_group_complete
+    rotate_events: timer_kraken_rotator_tick
+
+show_player:
+  mode_krakenFinal_started:
+    kraken_final:
+      loops: 0    
+  krakenFinal_tentacules_group_complete{state=="red"}:
+    kraken_complete:      
+      loops: 0
+    kraken_rainbow:      
+      loops: 0
+      events_when_completed: end_krakenFinal_done
+
+event_player:
+  sh_krakenFinal_1_kraken_final_pro_lit_hit: 
+    - advance_shot_1
+  sh_krakenFinal_3_kraken_final_pro_lit_hit: 
+    - advance_shot_3
+  sh_krakenFinal_5_kraken_final_pro_lit_hit: 
+    - advance_shot_5
+  sh_krakenFinal_1_kraken_final_pro_red_hit: 
+    - loose_life
+  sh_krakenFinal_3_kraken_final_pro_red_hit: 
+    - loose_life
+  sh_krakenFinal_5_kraken_final_pro_red_hit: 
+    - loose_life
+  krakenFinal_tentacules_group_red_hit{current_player.your_life <= 0}:
+    - end_krakenFinal_done
+
+variable_player:  
+  loose_life:    
+    your_life: -1

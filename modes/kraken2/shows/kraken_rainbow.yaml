@@ -1,0 +1,97 @@
+#show_version=5
+- duration: 1
+  lights:
+    l_left_loop: eb0000
+    l_left_ramp: eb0000
+    l_main_scope: eb0000
+    l_upper_loop: eb0000
+    l_right_ramp: eb0000
+    l_right_loop: eb0000    
+- duration: 1
+  lights:
+    l_left_loop: ff7f00
+    l_left_ramp: ff7f00
+    l_main_scope: ff7f00
+    l_upper_loop: ff7f00
+    l_right_ramp: ff7f00
+    l_right_loop: ff7f00
+- duration: 1
+  lights:
+    l_left_loop: ffff00
+    l_left_ramp: ffff00
+    l_main_scope: ffff00
+    l_upper_loop: ffff00
+    l_right_ramp: ffff00
+    l_right_loop: ffff00
+- duration: 1
+  lights:
+    l_left_loop: 80ff00
+    l_left_ramp: 80ff00
+    l_main_scope: 80ff00
+    l_upper_loop: 80ff00
+    l_right_ramp: 80ff00
+    l_right_loop: 80ff00
+- duration: 1
+  lights:
+    l_left_loop: 00ff00
+    l_left_ramp: 00ff00
+    l_main_scope: 00ff00
+    l_upper_loop: 00ff00
+    l_right_ramp: 00ff00
+    l_right_loop: 00ff00
+- duration: 1
+  lights:
+    l_left_loop: 00ff80
+    l_left_ramp: 00ff80
+    l_main_scope: 00ff80
+    l_upper_loop: 00ff80
+    l_right_ramp: 00ff80
+    l_right_loop: 00ff80
+- duration: 1
+  lights:
+    l_left_loop: 00ffff
+    l_left_ramp: 00ffff
+    l_main_scope: 00ffff
+    l_upper_loop: 00ffff
+    l_right_ramp: 00ffff
+    l_right_loop: 00ffff
+- duration: 1
+  lights:
+    l_left_loop: 0080ff
+    l_left_ramp: 0080ff
+    l_main_scope: 0080ff
+    l_upper_loop: 0080ff
+    l_right_ramp: 0080ff
+    l_right_loop: 0080ff
+- duration: 1
+  lights:
+    l_left_loop: 0000ff
+    l_left_ramp: 0000ff
+    l_main_scope: 0000ff
+    l_upper_loop: 0000ff
+    l_right_ramp: 0000ff
+    l_right_loop: 0000ff
+- duration: 1
+  lights:
+    l_left_loop: 8000ff
+    l_left_ramp: 8000ff
+    l_main_scope: 8000ff
+    l_upper_loop: 8000ff
+    l_right_ramp: 8000ff
+    l_right_loop: 8000ff
+- duration: 1
+  lights:
+    l_left_loop: ff00ff
+    l_left_ramp: ff00ff
+    l_main_scope: ff00ff
+    l_upper_loop: ff00ff
+    l_right_ramp: ff00ff
+    l_right_loop: ff00ff
+- duration: 1
+  lights:
+    l_left_loop: ff0080
+    l_left_ramp: ff0080
+    l_main_scope: ff0080
+    l_upper_loop: ff0080
+    l_right_ramp: ff0080
+    l_right_loop: ff0080

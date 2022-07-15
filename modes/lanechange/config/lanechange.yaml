@@ -39,7 +39,7 @@ shot_profiles:
       - name: unlit  # step 1
         show: off      
       - name: lit  # step 3
-        show: on
+        show: on    
 
 variable_player:
   change_lane_group_complete:

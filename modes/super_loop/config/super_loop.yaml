@@ -37,4 +37,4 @@ show_player:
   timer_loop_timer_complete:
     super_loop_result:
       loops: 0
-      events_when_completed: end_show_done
+      events_when_completed: end_show_done, kraken_go

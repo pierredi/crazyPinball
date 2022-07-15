@@ -1,0 +1,9 @@
+#show_version=5
+- duration: -1      
+  shows:
+    flash_color:
+      priority: 10     # higher priority as the shots
+      show_tokens:
+        color: green
+        leds: l_left_loop, l_left_ramp, l_right_ramp, l_right_loop, l_upper_loop
+      speed: 4

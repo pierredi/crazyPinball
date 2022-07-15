@@ -1,0 +1,61 @@
+#config_version=5
+##! mode: Kraken
+mode:
+  start_events: kraken_go
+  priority: 300
+  stop_events: ball_will_end, end_kraken_done
+
+shots:
+  sh_kraken_1:
+    hit_events: left_loop_hit
+    profile: kraken_phase_1_pro
+    show_tokens:      
+      leds: l_left_loop 
+  sh_kraken_2:
+    hit_events: left_ramp_hit
+    profile: kraken_phase_1_pro
+    show_tokens:
+      leds: l_left_ramp
+  sh_kraken_3:
+    hit_events: upper_loop_hit
+    profile: kraken_phase_1_pro
+    show_tokens:
+      leds: l_upper_loop  
+  sh_kraken_4:
+    hit_events: right_ramp_hit
+    profile: kraken_phase_1_pro
+    show_tokens:
+      leds: l_right_ramp
+  sh_kraken_5:
+    hit_events: right_loop_hit
+    profile: kraken_phase_1_pro
+    show_tokens:
+      leds: l_right_loop
+
+shot_profiles:  
+  kraken_phase_1_pro:
+    states:
+      - name: lit  # step 3
+        show: "purple_lit"
+      - name: flash
+        show: "purple_flashing_lit"
+        speed: 2
+      - name: unlit  # step 1
+        show: off              
+    loop: false
+
+shot_groups:
+  kraken_tentacules_group:
+    shots: sh_kraken_1, sh_kraken_3, sh_kraken_5
+    #  ,sh_kraken_4, sh_kraken_2
+    reset_events: kraken_tentacules_group_complete
+
+show_player:
+  mode_kraken_started:
+    kraken_level_1:
+      loops: 0    
+  kraken_tentacules_group_complete{state=="unlit"}:
+    tentacule_complete:      
+      loops: 0
+      events_when_completed: end_kraken_done, kraken2_go
+
