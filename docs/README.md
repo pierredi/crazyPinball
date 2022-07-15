@@ -1,3 +1,3 @@
 # Documentation
-**Pinball CrazyFlip early proto**
-[Visitez notre Wiki](https://github.com/pierredi/crazyPinball/wiki)
+
+[Visitez notre Wiki Pinball CrazyFlip early proto](https://github.com/pierredi/crazyPinball/wiki)
